@@ -6,7 +6,7 @@ const PORT = 3200
 const app = express()
 
 app.use('/gif/no', express.static('gif/no'));
-app.use('/gif/yes', express.static('gif/no'));
+app.use('/gif/yes', express.static('gif/yes'));
 
 const randomIndex = () => { return Math.floor(Math.random()*2) }
 const randomIndex2 = () => { return Math.floor(Math.random()*3) }
